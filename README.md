@@ -10,9 +10,9 @@ This project is the Python part of the Udacity's Programming for Data Science Na
 
 
 ### Files used
-chicago.csv
-new_york_city.csv
-washington.csv
+chicago.csv   
+new_york_city.csv   
+washington.csv   
 
 ### Credits
 While the dataset files were provided by Motivate, a New York City based company that operations bike share systems across the United States, Udacity provided the motivation, and training, to explore the data.
