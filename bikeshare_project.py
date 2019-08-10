@@ -6,6 +6,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+MONTH_DATA = ['all', 'january', 'february', 'march','april', 'may','june']
+
+DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 def get_filters():
     """
@@ -30,7 +33,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input('\nPlease type one of the following: all, January, February, March, April, May, June\n').lower()
-        if month not in ('all', 'january', 'february', 'march','april', 'may','june'):
+        if month not in MONTH_DATA:
             print('Please try again. Be sure to type one of the following: all, January, February, March, April, May, June\n')
             continue
         else:
@@ -40,7 +43,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input('\nPlease type one of the following: all, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n').lower()
-        if day not in ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
+        if day not in DAY_DATA:
             print('Please try again.  Be sure to type one of the following: all, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n')
             continue
         else:
@@ -77,7 +80,7 @@ def load_data(city, month, day):
     #filter by month
     if month != 'all':
         #use index of moths list to get corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
+        months = MONTH_DATA
         month = months.index(month) + 1
 
         #filter by month to creat new DataFrame
