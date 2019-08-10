@@ -15,4 +15,4 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+While the dataset files were provided by Motivate, a New York City based company that operations bike share systems across the United States, Udacity provided the motivation, and training, to explore the data.
